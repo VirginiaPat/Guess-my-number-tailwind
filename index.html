@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body
+    class="font-(family-name:--font-press-start-2p) text-(--color-light-grey) bg-(--color-background-grey)"
+  >
+    <header class="relative h-[35vh] border-b-7 border-(--color-light-grey)">
+      <h1
+        class="absolute top-[52%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[2.55rem] text-center"
+      >
+        Guess My Number!
+      </h1>
+      <p class="absolute top-5 right-5 text-sm">(Between 1 and 20)</p>
+      <button
+        id="again"
+        class="absolute top-5 left-5 bg-(--color-light-grey) text-(--color-background-grey) text-xl pt-4.5 pb-4.5 pl-7.5 pr-7.5 cursor-pointer hover:bg-(--color-medium-grey)"
+      >
+        Again!
+      </button>
+      <div
+        id="number"
+        class="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[50%] bg-(--color-light-grey) text-(--color-dark-grey) text-6xl w-37.5 pt-9 pb-9 text-center"
+      >
+        ?
+      </div>
+    </header>
+
+    <main
+      class="h-[65vh] text-(--color-light-grey) flex items-center justify-around"
+    >
+      <section class="w-130 flex flex-col items-center">
+        <input
+          id="guess"
+          type="number"
+          class="bg-none border-4 border-(--color-light-grey) text-[3.125rem] pl-6.25 pr-6.25 pt-4.25 pb-4.25 w-62.5 text-center block mb-7.5"
+        />
+        <button
+          id="check"
+          class="border-none bg-(--color-light-grey) text-(--color-background-grey) text-xl pt-4.5 pb-4.5 pl-7.5 pr-7.5 cursor-pointer hover:bg-(--color-medium-grey) check"
+        >
+          Check!
+        </button>
+      </section>
+
+      <section class="w-130 text-xl">
+        <p id="message" class="mb-20 h-7.5">Start guessing...</p>
+        <p class="mb-4.75">💯 Score: <span id="score">20</span></p>
+        <p>🥇 Highscore: <span id="highscore" class="highscore">0</span></p>
+      </section>
+    </main>
+    <footer class="flex items-center justify-center mt-30">
+      &copy; by Jonas Schmedtmann. From Udemy:<a
+        class="text-(--color-background-green)"
+        href="https://www.udemy.com/course/the-complete-javascript-course/"
+        target="_blank"
+        >&nbsp;The Complete JavaScript Course 2025: From Zero to Expert!</a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
