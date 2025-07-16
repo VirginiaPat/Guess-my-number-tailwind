@@ -17,8 +17,8 @@ This is a project from Udemy's tutorial: The Complete JavaScript Course 2025: Fr
 
 ### Links
 
-- Solution URL: [Github]()
-- Live Site URL: [Netlify]()
+- Solution URL: [https://github.com/VirginiaPat/Guess-my-number-tailwind.git]()
+- Live Site URL: [https://quess-my-number.netlify.app/]()
 
 ## My process
 
